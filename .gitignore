@@ -1,0 +1,28 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+.env.production
+*.log
+.DS_Store
+
+# Server
+server/node_modules/
+server/dist/
+server/.env
+
+# Client
+client/node_modules/
+client/dist/
+client/.env
+client/.env.local
+
+# Buffer files
+/buffer_files/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

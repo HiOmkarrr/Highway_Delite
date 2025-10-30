@@ -1,0 +1,17 @@
+{
+  "name": "highway-delite",
+  "version": "1.0.0",
+  "description": "Highway Delite - Travel Experiences Booking Platform",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["booking", "travel", "experiences"],
+  "author": "Highway Delite",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
