@@ -3,6 +3,7 @@ import { experienceService } from '../services/api';
 import { Experience } from '../types';
 import ExperienceCard from '../components/ExperienceCard';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
   const [experiences, setExperiences] = useState<Experience[]>([]);
@@ -52,6 +53,8 @@ const Home: React.FC = () => {
           </div>
         )}
       </main>
+
+      <Footer />
     </div>
   );
 };

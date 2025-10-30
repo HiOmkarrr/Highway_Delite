@@ -213,3 +213,9 @@ This is an assignment project for Highway Delite internship.
 ## 📄 License
 
 MIT
+
+
+> **Developed by:** Omkar ([@HiOmkarrr](https://github.com/HiOmkarrr))  
+> **Purpose:** Internship Application Project  
+> **Date:** October 2025  
+> **Copyright:** © 2025 Omkar. All rights reserved.
