@@ -13,12 +13,28 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'https://daring-peace-production.up.railway.app',
-    'https://*.railway.app', // Allow all Railway domains
-    'https://*.vercel.app'
-  ],
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    const allowedOrigins = [
+      'http://localhost:5173',
+      'http://localhost:5174',
+      'https://daring-peace-production.up.railway.app',
+      'https://highway-delite-pi.vercel.app'
+    ];
+    
+    // Check if origin is in allowed list or matches pattern
+    const isAllowed = allowedOrigins.includes(origin) || 
+                      origin.endsWith('.railway.app') || 
+                      origin.endsWith('.vercel.app');
+    
+    if (isAllowed) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 app.use(express.json());
