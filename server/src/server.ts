@@ -16,7 +16,8 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'https://daring-peace-production.up.railway.app',
-    'https://*.railway.app' // Allow all Railway domains
+    'https://*.railway.app', // Allow all Railway domains
+    'https://*.vercel.app'
   ],
   credentials: true
 }));
