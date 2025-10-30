@@ -1,3 +1,16 @@
+/**
+ * Highway Delite - Travel Experiences Booking Platform
+ * Copyright (c) 2025 Omkar (HiOmkarrr)
+ * 
+ * This software was developed as part of an internship application.
+ * All rights reserved. Unauthorized use, reproduction, or distribution 
+ * of this code without express written permission is strictly prohibited.
+ * 
+ * Author: Omkar
+ * GitHub: @HiOmkarrr
+ * Created: October 2025
+ */
+
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
